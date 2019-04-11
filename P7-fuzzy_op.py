@@ -6,6 +6,7 @@ def membership(x, S):
     return 0 
 
 
+#Union
 def union(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
@@ -19,6 +20,7 @@ def union(A, B):
     return Z        
 
 
+#Intersection
 def intersection(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
@@ -30,6 +32,7 @@ def intersection(A, B):
     return Z
 
 
+#Complement
 def complement(A):
     X = A.copy()
     for i in X:
@@ -39,7 +42,8 @@ def complement(A):
     
     return X
     
-    
+
+#Algebraic Sum
 def fuzzy_sum(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
@@ -55,7 +59,8 @@ def fuzzy_sum(A, B):
     
     return Z
     
-    
+ 
+#Algebraic Product
 def fuzzy_product(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
@@ -68,7 +73,8 @@ def fuzzy_product(A, B):
     
     return Z
     
-    
+
+#Bounded Sum
 def bounded_sum(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
@@ -84,7 +90,8 @@ def bounded_sum(A, B):
     
     return Z
     
-    
+
+#Bounded Difference
 def bounded_diff(A, B):
     X,Y = A.copy(),B.copy()
     Z = []
